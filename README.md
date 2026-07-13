@@ -25,41 +25,44 @@ Key stats at a glance: 756 matches · 14 teams · 12 seasons (2008–2019)
 | Query Layer | SQL | Aggregations, `GROUP BY` analysis, `VIEW`s for season-wise champions |
 | Visualization | Power BI | Interactive report with DAX measures, slicers, cross-filtering, and drill-through |
 
-🔄 Project Workflow
+## 🔄 Project Workflow
+
+```
 updated_matches.xlsx (Raw Dataset)
-            │
-            ▼
+        │
+        ▼
 Microsoft Excel
-• Data Cleaning
-• Duplicate Removal
-• Null Handling
-• Formatting
-            │
-            ▼
+├── Data Cleaning
+├── Duplicate Removal
+├── Null Handling
+└── Formatting
+        │
+        ▼
 Python (handle-ipl-dataset.ipynb)
-• Data Processing
-• Exploratory Data Analysis (EDA)
-• Feature Engineering
-            │
-            ▼
+├── Data Processing
+├── Exploratory Data Analysis (EDA)
+└── Feature Engineering
+        │
+        ▼
 MySQL (ipl_db)
-• Store Cleaned Data
-• SQLAlchemy Integration
-            │
-            ▼
+├── Store Cleaned Data
+└── SQLAlchemy Integration
+        │
+        ▼
 SQL (IPL-db.sql)
-• Aggregations
-• GROUP BY Analysis
-• Views
-• Business Insights
-            │
-            ▼
+├── Aggregations
+├── GROUP BY Analysis
+├── Views
+└── Business Insights
+        │
+        ▼
 Power BI (IPL-Dashboard_Analysis.pbix)
-• DAX Measures
-• KPI Cards
-• Interactive Visualizations
-• Slicers & Cross-filtering
-• Dashboard Insights
+├── DAX Measures
+├── KPI Cards
+├── Interactive Visualizations
+├── Slicers & Cross-filtering
+└── Dashboard Insights
+```
 
 📁 Project Structure
 IPL-Dashboard-Analysis/
