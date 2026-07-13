@@ -1,13 +1,12 @@
 # 🏏 **IPL Dashboard Analysis (2008–2019)**
+> An end-to-end data analytics project covering **756 IPL matches** across **14 teams** and **12 seasons** — from raw data cleaning to an interactive **Power BI dashboard**.
 
-> An end-to-end data analytics project covering **756 IPL matches** across **14 teams** and **12 seasons**, transforming raw data into an **interactive Power BI dashboard**.
+**Pipeline:** Microsoft Excel (Data Cleaning) → Python (Transformation & EDA) → MySQL (Storage & Querying) → Power BI (Interactive Visualization)
 
-**🔄 Pipeline:** Excel → Python → MySQL → Power BI
-
-**📊 Dataset Summary**
-- **756 Matches**
-- **14 Teams**
-- **12 Seasons (2008–2019)**
+**Key Statistics**
+- 🏏 **756 Matches**
+- 👥 **14 Teams**
+- 📅 **12 Seasons (2008–2019)**
 
 ## 🎥 Dashboard Preview
 
