@@ -6,6 +6,13 @@ The pipeline: Excel (cleaning) → Python (transformation & EDA) → MySQL (stor
 
 Key stats at a glance: 756 matches · 14 teams · 12 seasons (2008–2019)
 
+## 🎥 Dashboard Preview
+
+<p align="center">
+  <img src="path/to/your-file.gif" alt="IPL Dashboard Demo" width="900">
+</p>
+
+
 🔧 Tech Stack
 | Stage | Tool / Library | Details |
 |-------|----------------|---------|
