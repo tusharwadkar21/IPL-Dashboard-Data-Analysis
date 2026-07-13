@@ -103,18 +103,30 @@ IPL-Dashboard-Analysis/
 - Structured the dataset into separate **matches** and **pivot_table** worksheets for efficient analysis.
 - Applied data validation and formatting to ensure compatibility with Python, MySQL, and Power BI.
 
-## 🐍 2. Data Processing & EDA (Python)
+## 🐍 2. Data Processing & Exploratory Data Analysis (Python)
 
-Notebook: handle-ipl-dataset.ipynb <br>
-Key steps:<br>
-Loaded updated_matches.xlsx with pandas.read_excel (via openpyxl engine)
-Checked missing values with df.isnull().sum()
-Engineered features: bat_first_win, bowl_first_win, draw_match, bat_first, bowl_first
-Computed team-level stats: matches played, wins, chasing win %, defending win %
-Aggregated venue-level stats: bat-first vs bowl-first win percentage per stadium
-Uploaded the cleaned matches sheet into MySQL using SQLAlchemy + mysql-connector-python
+**Notebook:** `handle-ipl-dataset.ipynb`
 
-Dataset columns:<br> id, season, city, date, team1, team2, toss_winner, toss_decision, result, winner, win_by_runs, win_by_wickets, player_of_match, venue, umpire1, umpire2
+**Objective:** Transform the cleaned IPL dataset, perform exploratory data analysis (EDA), engineer new features, and prepare the data for SQL-based analysis and Power BI visualization.
+
+### Key Activities
+
+- Imported the cleaned dataset (`updated_matches.xlsx`) using **pandas** with the **openpyxl** engine.
+- Performed data quality checks by identifying missing values using `df.isnull().sum()`.
+- Engineered new analytical features, including:
+  - `bat_first_win`
+  - `bowl_first_win`
+  - `draw_match`
+  - `bat_first`
+  - `bowl_first`
+- Generated team-level performance metrics such as:
+  - Matches Played
+  - Total Wins
+  - Batting First Win Percentage
+  - Chasing Win Percentage
+- Computed venue-wise statistics to compare **Bat First** vs **Bowl First** winning percentages across stadiums.
+- Conducted exploratory data analysis (EDA) to identify performance trends and match patterns.
+- Uploaded the cleaned and transformed **matches** dataset into **MySQL** using **SQLAlchemy** and **mysql-connector-python** for further SQL analysis.
 
 ## 🗄️ 3. Database (MySQL)
 
