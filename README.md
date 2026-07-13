@@ -93,12 +93,15 @@ IPL-Dashboard-Analysis/
 └── README.md                           # Project documentation
 ```
 
-## 🧹 1. Data Cleaning (Excel)
+## 🧹 1. Data Cleaning (Microsoft Excel)
 
-Removed duplicate match records from the raw IPL dataset
-Standardized team names, dates, and venue names
-Organized data into two sheets: matches (raw match-level data) and pivot_table
-Checked and handled null values (umpire, city, winner fields) before export
+**Objective:** Prepare the raw IPL dataset for analysis by improving data quality and consistency.
+
+- Eliminated duplicate match records to maintain dataset integrity.
+- Standardized team names, venue names, and date formats across all seasons.
+- Handled missing values in critical columns, including **Umpire**, **City**, and **Winner**.
+- Structured the dataset into separate **matches** and **pivot_table** worksheets for efficient analysis.
+- Applied data validation and formatting to ensure compatibility with Python, MySQL, and Power BI.
 
 ## 🐍 2. Data Processing & EDA (Python)
 
