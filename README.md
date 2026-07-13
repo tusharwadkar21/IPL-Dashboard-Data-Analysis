@@ -135,19 +135,43 @@ IPL-Dashboard-Analysis/
 
 ## 🗄️ 3. Database (MySQL)
 
-**Database: ipl_db | Table: matches**
+**Database:** `ipl_db`  
+**Table:** `matches`
 
-**Queries in IPL-db.sql answer:**
+**Objective:** Store the cleaned IPL dataset in a relational database and perform SQL-based analysis to generate business insights for the Power BI dashboard.
 
+### Database Operations
 
-Which teams have played the most matches?<br>
-Which teams have won the most matches, and what's their win percentage?<br>
-Top 10 Player of the Match winners<br>
-Which stadium hosted the most matches?<br>
-Toss decision trends & toss winner vs match winner impact<br>
-Season-wise match counts and season-wise champions (via SQL VIEW)<br>
-Biggest wins by runs and by wickets<br>
-Win rates batting first vs chasing
+- Imported the cleaned IPL dataset into the **MySQL** database using **SQLAlchemy** and **mysql-connector-python**.
+- Designed a structured relational table (`matches`) to support efficient querying and analysis.
+- Wrote optimized SQL queries to extract season-wise, team-wise, player-wise, venue-wise, and match-level insights.
+- Created reusable SQL **VIEWs** to simplify analytical queries and improve reporting efficiency.
+
+### SQL Analysis Performed
+
+- 📊 Team-wise match participation (Most Matches Played)
+- 🏆 Team-wise total wins and overall win percentage
+- 🌟 Top 10 **Player of the Match** award winners
+- 🏟️ Stadiums hosting the highest number of IPL matches
+- 🪙 Toss decision analysis and the impact of winning the toss on match outcomes
+- 📅 Season-wise match counts and **Season Champions** using SQL VIEWs
+- 🚀 Biggest victories by **Runs** and **Wickets**
+- 🏏 Comparative win analysis for **Batting First** vs **Chasing**
+- 📈 Venue-wise batting-first and bowling-first winning percentages
+
+### SQL Concepts Used
+
+- `SELECT`
+- `WHERE`
+- `GROUP BY`
+- `ORDER BY`
+- `COUNT()`
+- `SUM()`
+- `AVG()`
+- `CASE`
+- `ROUND()`
+- `VIEW`
+- Aggregate Functions
 
 ## 📊 4. Interactive Dashboard Development (Power BI)
 
