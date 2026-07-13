@@ -15,7 +15,8 @@
 </p>
 
 
-🔧 Tech Stack
+## 🔧 Tech Stack
+
 | Stage | Tool / Library | Details |
 |-------|----------------|---------|
 | Data Cleaning | Microsoft Excel | Duplicate removal, null handling, formatting, pivot tables |
@@ -92,13 +93,15 @@ IPL-Dashboard-Analysis/
 └── README.md                           # Project documentation
 ```
 
-🧹 1. Data Cleaning (Excel)
+## 🧹 1. Data Cleaning (Excel)
+
 Removed duplicate match records from the raw IPL dataset
 Standardized team names, dates, and venue names
 Organized data into two sheets: matches (raw match-level data) and pivot_table
 Checked and handled null values (umpire, city, winner fields) before export
 
-🐍 2. Data Processing & EDA (Python)
+## 🐍 2. Data Processing & EDA (Python)
+
 Notebook: handle-ipl-dataset.ipynb
 Key steps:
 Loaded updated_matches.xlsx with pandas.read_excel (via openpyxl engine)
@@ -110,7 +113,8 @@ Uploaded the cleaned matches sheet into MySQL using SQLAlchemy + mysql-connector
 
 Dataset columns: id, season, city, date, team1, team2, toss_winner, toss_decision, result, winner, win_by_runs, win_by_wickets, player_of_match, venue, umpire1, umpire2
 
-🗄️ 3. Database (MySQL)
+## 🗄️ 3. Database (MySQL)
+
 Database: ipl_db | Table: matches
 Queries in IPL-db.sql answer:
 Which teams have played the most matches?
@@ -122,19 +126,20 @@ Season-wise match counts and season-wise champions (via SQL VIEW)
 Biggest wins by runs and by wickets
 Win rates batting first vs chasing
 
-📊 4. Visualization (Power BI)
+## 📊 4. Visualization (Power BI)
 
-File: IPL-Dashboard_Analysis.pbit
+**File: IPL-Dashboard_Analysis.pbit**
 
 Developed a fully interactive Power BI dashboard where all KPIs, charts, and visuals dynamically update based on slicer selections and cross-filtering, enabling users to analyze team and match performance from multiple perspectives (season-wise, venue-wise, toss-wise).
 
-Key Power BI techniques used:
+**Key Power BI techniques used:**
 DAX measures for KPIs (total matches, total teams, total seasons) and calculated win percentages
 Slicers (season selector) driving dynamic filtering across all visuals on the page
 Cross-filtering between charts — selecting a bar, slice, or point on one visual filters the rest of the dashboard
 Conditional/dynamic titles — the "Champions on Selected Season" card updates based on the active slicer selection
 
-Dashboard highlights:
+## Dashboard highlights:
+
 Season filter — view stats for all seasons or drill into one, with the season champion shown dynamically
 Top-line KPIs — total matches (756), total teams (14), total seasons (12)
 Most Player of the Match winners — CH Gayle leads with 21 awards
@@ -143,7 +148,7 @@ Most wins by team — Mumbai Indians (109) leads, followed by Chennai Super King
 Matches per season — trend line showing match count growth from 2008 to 2019
 Toss result vs match result — toss winners went on to win 51.98% of matches
 
-📈 Key Insights
+## 📈 Key Insights
 Mumbai Indians are the most successful franchise by total wins (109), followed by Chennai Super Kings (100)
 Chennai Super Kings won the most recent selected-season championship shown in the dashboard
 Teams that won the toss went on to win the match 51.98% of the time — a modest but real toss advantage
