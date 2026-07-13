@@ -64,7 +64,9 @@ Power BI (IPL-Dashboard_Analysis.pbix)
 └── Dashboard Insights
 ```
 
-📁 Project Structure
+## 📁 Project Structure
+
+```
 IPL-Dashboard-Analysis/
 │
 ├── data/
@@ -79,13 +81,14 @@ IPL-Dashboard-Analysis/
 ├── dashboard/
 │   └── IPL-Dashboard_Analysis.pbix     # Interactive Power BI dashboard
 │
-├── screenshot/
-│   ├── Snapshot of ipl dashboard.png
-│  
+├── screenshots/
+│   └── Snapshot_of_IPL_Dashboard.png   # Dashboard screenshot
+│
 ├── demo/
 │   └── IPL_PowerBI_Dashboard_Demo.mp4  # Dashboard walkthrough video
 │
 └── README.md                           # Project documentation
+```
 
 🧹 1. Data Cleaning (Excel)
 Removed duplicate match records from the raw IPL dataset
