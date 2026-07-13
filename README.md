@@ -133,11 +133,11 @@ IPL-Dashboard-Analysis/
 - Prepared the transformed dataset for database storage and downstream business intelligence reporting.
 - Uploaded the cleaned **matches** dataset into **MySQL** using **SQLAlchemy** and **mysql-connector-python** for SQL analysis and Power BI integration.
 
-🗄️ 3. Database (MySQL)
+## 🗄️ 3. Database (MySQL)
 
-Database: ipl_db | Table: matches
+**Database: ipl_db | Table: matches**
 
-Queries in IPL-db.sql answer:
+**Queries in IPL-db.sql answer:**
 
 
 Which teams have played the most matches?
