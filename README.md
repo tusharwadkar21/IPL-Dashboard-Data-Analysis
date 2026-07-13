@@ -140,13 +140,13 @@ IPL-Dashboard-Analysis/
 **Queries in IPL-db.sql answer:**
 
 
-Which teams have played the most matches?
-Which teams have won the most matches, and what's their win percentage?
-Top 10 Player of the Match winners
-Which stadium hosted the most matches?
-Toss decision trends & toss winner vs match winner impact
-Season-wise match counts and season-wise champions (via SQL VIEW)
-Biggest wins by runs and by wickets
+Which teams have played the most matches?<br>
+Which teams have won the most matches, and what's their win percentage?<br>
+Top 10 Player of the Match winners<br>
+Which stadium hosted the most matches?<br>
+Toss decision trends & toss winner vs match winner impact<br>
+Season-wise match counts and season-wise champions (via SQL VIEW)<br>
+Biggest wins by runs and by wickets<br>
 Win rates batting first vs chasing
 
 ## 📊 4. Interactive Dashboard Development (Power BI)
