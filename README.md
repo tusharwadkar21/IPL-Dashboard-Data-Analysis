@@ -19,39 +19,63 @@ Key stats at a glance: 756 matches · 14 teams · 12 seasons (2008–2019)
 | Visualization | Power BI | Interactive report with DAX measures, slicers, cross-filtering, and drill-through |
 
 🔄 Project Workflow
-
-updated_matches.xlsx (raw)
-        ↓
-Excel — cleaning, duplicate removal, formatting
-        ↓
-Python (handle-ipl-dataset.ipynb) — EDA, feature engineering
-        ↓
-MySQL (ipl_db) — structured storage via SQLAlchemy
-        ↓
-SQL queries (IPL-db.sql) — aggregations & insights
-        ↓
-Power BI (IPL-Dashboard_Analysis.pbit) — interactive dashboard
+updated_matches.xlsx (Raw Dataset)
+            │
+            ▼
+Microsoft Excel
+• Data Cleaning
+• Duplicate Removal
+• Null Handling
+• Formatting
+            │
+            ▼
+Python (handle-ipl-dataset.ipynb)
+• Data Processing
+• Exploratory Data Analysis (EDA)
+• Feature Engineering
+            │
+            ▼
+MySQL (ipl_db)
+• Store Cleaned Data
+• SQLAlchemy Integration
+            │
+            ▼
+SQL (IPL-db.sql)
+• Aggregations
+• GROUP BY Analysis
+• Views
+• Business Insights
+            │
+            ▼
+Power BI (IPL-Dashboard_Analysis.pbix)
+• DAX Measures
+• KPI Cards
+• Interactive Visualizations
+• Slicers & Cross-filtering
+• Dashboard Insights
 
 📁 Project Structure
-
 IPL-Dashboard-Analysis/
 │
 ├── data/
-│   └── updated_matches.xlsx          # Cleaned dataset (sheets: matches, pivot_table)
+│   └── updated_matches.xlsx            # Cleaned IPL dataset (matches & pivot_table sheets)
 │
 ├── notebooks/
-│   └── handle-ipl-dataset.ipynb      # Python cleaning, EDA & MySQL upload
+│   └── handle-ipl-dataset.ipynb        # Data cleaning, EDA & MySQL upload
 │
 ├── sql/
-│   └── IPL-db.sql                    # MySQL analysis queries
+│   └── IPL-db.sql                      # SQL queries for analysis and insights
 │
 ├── dashboard/
-│   └── IPL-Dashboard_Analysis.pbit   # Power BI template
+│   └── IPL-Dashboard_Analysis.pbix     # Interactive Power BI dashboard
 │
-├── screenshots/
-│   └── Snapshot_of_IPL_Dashboard.png
+├── screenshot/
+│   ├── Snapshot of ipl dashboard.png
+│  
+├── demo/
+│   └── IPL_PowerBI_Dashboard_Demo.mp4  # Dashboard walkthrough video
 │
-└── README.md
+└── README.md                           # Project documentation
 
 🧹 1. Data Cleaning (Excel)
 Removed duplicate match records from the raw IPL dataset
