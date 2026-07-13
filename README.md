@@ -9,7 +9,7 @@ Key stats at a glance: 756 matches · 14 teams · 12 seasons (2008–2019)
 ## 🎥 Dashboard Preview
 
 <p align="center">
-  <img src="[path/to/your-file.gif](https://github.com/tusharwadkar21/IPL-Dashboard-Data-Analysis/blob/main/IPL_PowerBI_Dashboard_Demo.gif)" alt="IPL Dashboard Demo" width="900">
+<img src="https://raw.githubusercontent.com/tusharwadkar21/IPL-Dashboard-Data-Analysis/main/IPL_PowerBI_Dashboard_Demo.gif" width="900">
 </p>
 
 
