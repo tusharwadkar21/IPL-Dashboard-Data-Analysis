@@ -102,8 +102,8 @@ Checked and handled null values (umpire, city, winner fields) before export
 
 ## 🐍 2. Data Processing & EDA (Python)
 
-Notebook: handle-ipl-dataset.ipynb
-Key steps:
+Notebook: handle-ipl-dataset.ipynb <br>
+Key steps:<br>
 Loaded updated_matches.xlsx with pandas.read_excel (via openpyxl engine)
 Checked missing values with df.isnull().sum()
 Engineered features: bat_first_win, bowl_first_win, draw_match, bat_first, bowl_first
@@ -111,12 +111,12 @@ Computed team-level stats: matches played, wins, chasing win %, defending win %
 Aggregated venue-level stats: bat-first vs bowl-first win percentage per stadium
 Uploaded the cleaned matches sheet into MySQL using SQLAlchemy + mysql-connector-python
 
-Dataset columns: id, season, city, date, team1, team2, toss_winner, toss_decision, result, winner, win_by_runs, win_by_wickets, player_of_match, venue, umpire1, umpire2
+Dataset columns:<br> id, season, city, date, team1, team2, toss_winner, toss_decision, result, winner, win_by_runs, win_by_wickets, player_of_match, venue, umpire1, umpire2
 
 ## 🗄️ 3. Database (MySQL)
 
 Database: ipl_db | Table: matches
-Queries in IPL-db.sql answer:
+Queries in IPL-db.sql answer:<br>
 Which teams have played the most matches?
 Which teams have won the most matches, and what's their win percentage?
 Top 10 Player of the Match winners
